@@ -20,7 +20,7 @@
     "loopback-datasource-juggler": "^3.9.2",
     "serve-favicon": "^2.4.3",
     "strong-error-handler": "^2.1.0",
-    "zipkin": "^0.7.1",
+    "zipkin": "^0.10.0",
     "zipkin-instrumentation-express": "^0.7.1",
     "zipkin-transport-http": "^0.7.1"
   },
