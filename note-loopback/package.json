@@ -5,7 +5,9 @@
   "scripts": {
     "lint": "eslint .",
     "start": "node .",
-    "posttest": "npm run lint && nsp check"
+    "posttest": "npm run lint && nsp check",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "compression": "^1.6.2",
@@ -22,7 +24,8 @@
     "strong-error-handler": "^2.1.0",
     "zipkin": "^0.7.1",
     "zipkin-instrumentation-express": "^0.7.1",
-    "zipkin-transport-http": "^0.7.1"
+    "zipkin-transport-http": "^0.7.1",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "eslint": "^3.15.0",
@@ -34,5 +37,6 @@
     "url": ""
   },
   "license": "MIT",
-  "description": "note-loopback"
+  "description": "note-loopback",
+  "snyk": true
 }
